@@ -1,0 +1,108 @@
+.switch .demo1Wrapper {
+  width: 78px;
+  height: 50px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.switch .demo1Wrapper.active {
+  animation: demo1WrapperActive 0.5s;
+}
+
+.switch .demo1Wrapper.notActive {
+  animation: demo1WrapperNotActive 0.5s;
+}
+
+.switch .demo1 {
+  width: 58px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #333;
+}
+
+.switch .demo1Switch {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  top: 2px;
+  left: 2px;
+  background-color: #fff;
+  transition: all 0.3s;
+  transform: translateX(0);
+}
+
+.switch .notActive .demo1 {
+  background-color: #333;
+}
+
+.switch .active .demo1 {
+  background-color: rgba(24, 144, 255, 1);
+}
+
+.switch .notActive .demo1 .demo1Switch {
+  animation: switch1NotActive 0.5s;
+  transform: translateX(0);
+}
+
+.switch .active .demo1 .demo1Switch {
+  animation: switch1Active 0.5s;
+  transform: translateX(28px);
+}
+
+@keyframes demo1WrapperActive {
+  0% {
+    background-color: rgb(204, 204, 204);
+  }
+  50% {
+    background-color: rgba(24, 144, 255, 0.1);;
+  }
+  100% {
+    background-color: rgb(204, 204, 204);
+  }
+}
+
+@keyframes demo1WrapperNotActive {
+  0% {
+    background-color: rgb(204, 204, 204);
+  }
+  50% {
+    background-color: rgba(48, 48, 48, 0.1);;
+  }
+  100% {
+    background-color: rgb(204, 204, 204);
+  }
+}
+
+@keyframes switch1Active {
+  0% {
+    transform: translateX(0);
+    width: 26px;
+  }
+  40% {
+    transform: translateX(0);
+    width: 30px;
+  }
+  100% {
+    transform: translateX(28px);
+    width: 26px;
+  }
+}
+
+@keyframes switch1NotActive {
+  0% {
+    transform: translateX(28px);
+    width: 26px;
+  }
+  40% {
+    transform: translateX(24px);
+    width: 30px;
+  }
+  100% {
+    transform: translateX(0px);
+    width: 26px;
+  }
+}

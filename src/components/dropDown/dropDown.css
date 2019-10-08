@@ -1,0 +1,35 @@
+.dropDown ul, li{
+  list-style: none;
+}
+
+.dropDown .demo {
+  position: relative;
+}
+
+.dropDown ul {
+  position: absolute;
+}
+
+.dropDown ul li {
+  /* border: 1px solid red; */
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.dropDown ul.notActive {
+  display: none;
+}
+
+.dropDown ul.active {
+  background-color: #fff;
+  top: 22px;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.dropDown ul.active li:hover {
+  background-color: #ccc;
+}

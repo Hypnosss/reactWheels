@@ -1,0 +1,199 @@
+.datePicker .demo {
+  position: relative;
+  display: flex;
+  font-size: 12px;
+}
+
+.datePicker input {
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+}
+
+.datePicker input:hover {
+  border: 1px solid #1890FF;
+}
+
+.datePicker input:focus,
+.datePicker input.active {
+  width: 250px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.05s;
+}
+
+.datePicker .picker {
+  width: 250px;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  transition: all 0.05s;
+  opacity: 0;
+}
+
+.datePicker input:focus ~ .picker.active,
+.datePicker input.active ~ .picker.active {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 200px;
+  background-color: #fff;
+  border-top: 1px solid #D9D9D9;
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  padding-bottom: 10px;
+}
+
+.datePicker .picker .top {
+  width: 100%;
+  height: 15%;
+  /* background-color: #000; */
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  border-bottom: 1px solid #D9D9D9;
+  overflow: hidden;
+}
+
+.datePicker .picker .top button {
+  outline: none;
+  border: 0;
+  background-color: #fff;
+  width: 20px;
+}
+
+.datePicker .pk1 .top .year {
+  margin-left: 32px;
+  margin-right: 10px;
+}
+
+.datePicker .pk1 .top .month {
+  margin-right: 18px;
+  width: 48px; 
+}
+
+.datePicker .picker .top button:hover,
+.datePicker .picker .top span:hover {
+  color: #1890FF;
+  cursor: pointer;
+}
+
+.datePicker .picker .middle {
+  width: 100%;
+  height: 85%;
+  margin-top: 5px;
+}
+
+.datePicker .picker .middle table {
+  width: 100%;
+  height: 100%;
+}
+
+.datePicker .picker .middle table td {
+  text-align: center;
+  cursor: pointer;
+}
+
+.datePicker .pk1 .middle table td.lastMonth,
+.datePicker .pk1 .middle table td.nextMonth {
+  color: #BFBFBF;
+} 
+
+.datePicker .pk1 .middle table td span {
+  display: inline-block;
+  width: 72%;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 23px;
+  border-radius: 3px;
+}
+
+.datePicker .pk1 .middle table td.thisMonth:hover span {
+  background-color: #E6F7FF;
+}
+
+.datePicker .pk1 .middle table td span.sameDateWithInput, 
+.datePicker .pk1 .middle table td.thisMonth:hover span.sameDateWithInput {
+  background-color:  #BAE7FF;
+}
+
+
+.datePicker .pk2 {
+  z-index: 1;
+}
+
+.datePicker .pk2 .top span {
+  margin: 0 80px;
+}
+
+.datePicker .pk2 .middle table {
+  table-layout: fixed;
+}
+
+.datePicker .pk2 .middle table td span {
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+  padding: 6px 0;
+  border-radius: 5px;
+}
+
+.datePicker .pk2 .middle table td:hover span {
+  background-color: #E6F7FF;
+  color: #1890FF;
+}
+
+.datePicker .pk2 .middle table td.thisMonth span {
+  background-color: #1890FF;
+  color: white;
+}
+
+.datePicker .pk3 .top span:hover {
+  color: black;
+  cursor: default;
+}
+
+.datePicker .pk3 .top span {
+  margin: 0 60px;
+}
+
+.datePicker .pk3 .middle table {
+  table-layout: fixed;
+}
+
+.datePicker .pk3 .middle table td span {
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+  padding: 6px 0;
+  border-radius: 5px;
+}
+
+.datePicker .pk3 .middle table td.lastTenYears, 
+.datePicker .pk3 .middle table td.nextTenYears {
+  color: #BFBFBF;
+}
+
+.datePicker .pk3 .middle table td:hover span {
+  background-color: #E6F7FF;
+  color: #1890FF;
+}
+
+.datePicker .pk3 .middle table td.thisMonth span {
+  background-color: #1890FF;
+  color: white;
+}
+
+.datePicker .pk3 .middle table td.thisYear span {
+  background-color: #1890FF;
+  color: white;
+}

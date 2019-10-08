@@ -1,0 +1,27 @@
+.scrollDemo1 {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.scrollBar {
+  height: 500px;
+  width: 20px;
+  background-color: #666;
+  position: absolute;
+}
+
+.scrollBtn {
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.scrollThing {
+  width: calc(100% - 20px);
+  margin-right: 20px;
+}

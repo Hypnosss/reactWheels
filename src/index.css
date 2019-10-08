@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+  background-color: #ccc;
+}
+
+.rightMain {
+  margin: 10px;
+}
+
