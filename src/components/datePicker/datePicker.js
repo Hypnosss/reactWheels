@@ -234,6 +234,7 @@ function DatePicker() {
 
   function handleClickDate(e) {
     e.persist();
+    // console.log(e)
     if(e.target.tagName === "SPAN") {
       let tdNode = e.target.parentNode;
       let dateClicked = tdNode.children[0].innerText - 0;
