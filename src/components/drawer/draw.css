@@ -1,0 +1,32 @@
+.drawer .demo1Cover {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.drawer .active .demo1Cover {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.drawer .active .demo1Cover .drawerLeft {
+  opacity: 1;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.drawer .active .demo1Cover .drawRight {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+}

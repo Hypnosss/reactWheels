@@ -10,6 +10,8 @@ import InputNumber from "./components/inputNumber/inputNumberHook";
 import SSwitch from "./components/switch/sswitch";
 import CheckBox from "./components/checkBox/checkBox";
 import DatePicker from "./components/datePicker/datePicker";
+// import Test from "./components/test/test";
+import Drawer from "./components/drawer/drawer";
 
 class AppRouter extends Component {
   render() { 
@@ -28,6 +30,7 @@ class AppRouter extends Component {
             <Route path="/switch" component={SSwitch}/>
             <Route path="/checkBox" component={CheckBox}/>
             <Route path="/datePicker" component={DatePicker}/>
+            <Route path="/drawer" component={Drawer}/>
           </div>
         </div>
       </Router>

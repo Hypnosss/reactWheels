@@ -31,6 +31,9 @@ class slideNav extends Component {
           <li>
             <Link to="/datePicker">date picker</Link>
           </li>
+          <li>
+            <Link to="/drawer">drawer</Link>
+          </li>
         </ul>
       </div>
     );
