@@ -1,4 +1,4 @@
-# some simple wheels wrote with React
+# some simple wheels with React
 - checkBox
 - datePicker
 - dropDown
